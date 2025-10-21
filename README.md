@@ -1,7 +1,7 @@
 # NestJS Automata Kit
 
-[![npm version](https://img.shields.io/npm/v/@nestjs-automata/kit.svg)](https://www.npmjs.com/package/@nestjs-automata/kit)
-[![npm downloads](https://img.shields.io/npm/dm/@nestjs-automata/kit.svg)](https://www.npmjs.com/package/@nestjs-automata/kit)
+[![npm version](https://img.shields.io/npm/v/nestjs-automata-kit.svg)](https://www.npmjs.com/package/nestjs-automata-kit)
+[![npm downloads](https://img.shields.io/npm/dm/nestjs-automata-kit.svg)](https://www.npmjs.com/package/nestjs-automata-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A powerful NestJS package for seamless automation integrations with popular platforms like **Slack**, **Telegram**, **n8n**, **Zapier**, **Make**, **WhatsApp**, **Google Sheets**, and more.
@@ -20,9 +20,9 @@ A powerful NestJS package for seamless automation integrations with popular plat
 ## 📦 Installation
 
 ```bash
-npm install @nestjs-automata/kit
+npm install nestjs-automata-kit
 # or
-yarn add @nestjs-automata/kit
+yarn add nestjs-automata-kit
 ```
 
 ## ⚙️ Basic Setup
@@ -31,7 +31,7 @@ yarn add @nestjs-automata/kit
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { AutomationModule } from '@nestjs-automata/kit';
+import { AutomationModule } from 'nestjs-automata-kit';
 
 @Module({
   imports: [
@@ -81,7 +81,7 @@ N8N_API_KEY=your-api-key
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { AutomationService } from '@nestjs-automata/kit';
+import { AutomationService } from 'nestjs-automata-kit';
 
 @Injectable()
 export class NotificationService {
@@ -114,7 +114,7 @@ import {
   WebhookPayload, 
   WebhookHeaders, 
   WebhookService 
-} from '@nestjs-automata/kit';
+} from 'nestjs-automata-kit';
 
 @Controller('my-webhooks')
 export class MyWebhookController {
@@ -179,7 +179,7 @@ Create your own automation drivers:
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { BaseDriver } from '@nestjs-automata/kit';
+import { BaseDriver } from 'nestjs-automata-kit';
 
 @Injectable()
 export class CustomServiceDriver extends BaseDriver {
@@ -291,7 +291,7 @@ export class SecureWebhookController {
 
 ```typescript
 import { Test } from '@nestjs/testing';
-import { AutomationModule, AutomationService } from '@nestjs-automata/kit';
+import { AutomationModule, AutomationService } from 'nestjs-automata-kit';
 
 describe('AutomationService', () => {
   let service: AutomationService;

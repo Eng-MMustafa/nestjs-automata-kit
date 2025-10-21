@@ -1,5 +1,5 @@
 {
-  "name": "@nestjs-automata/kit",
+  "name": "nestjs-automata-kit",
   "version": "1.0.0",
   "description": "NestJS Automata Kit - Powerful automation package for seamless integrations with n8n, Zapier, Make, Slack, Telegram, WhatsApp, and more",
   "keywords": [

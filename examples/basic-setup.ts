@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { AutomationModule } from '@nestjs-automata/kit';
+import { AutomationModule } from 'nestjs-automata-kit';
 
 @Module({
   imports: [

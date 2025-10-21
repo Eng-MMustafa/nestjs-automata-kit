@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { AutomationService } from '@nestjs-automata/kit';
+import { AutomationService } from 'nestjs-automata-kit';
 
 @Injectable()
 export class OrderService {
